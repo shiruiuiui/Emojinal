@@ -18,21 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-f7-iV8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-f7-iV8">
                                 <rect key="frame" x="100" y="268" width="175" height="156"/>
                                 <color key="backgroundColor" red="0.075405634939670563" green="0.15462565422058105" blue="0.28774493932723999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="NXO-nv-FbI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="88"/>
                                 <state key="normal" title="🥴">
                                     <color key="titleColor" red="0.60622125864028931" green="0.91069525480270386" blue="0.92277377843856812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.016330424696207047" green="0.0016683700960129499" blue="0.0011244026245549321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJO-Np-8py"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfN-8h-cuZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfN-8h-cuZ">
                                 <rect key="frame" x="100" y="493" width="175" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.075405634939670563" green="0.15462565422058105" blue="0.28774493932723999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="IDp-Op-oA0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="88"/>
                                 <state key="normal" title="🤪"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IqW-NU-QeT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you feeling today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8S-ml-VAc">
                                 <rect key="frame" x="53" y="144" width="269" height="24"/>
@@ -41,15 +52,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.60622125864028931" green="0.91069525480270386" blue="0.92277377843856812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="W8S-ml-VAc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="2Fi-He-OFr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hpc-f7-iV8" secondAttribute="trailing" constant="100" id="g95-Tr-Uan"/>
-                            <constraint firstItem="hpc-f7-iV8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="jcX-pu-ehd"/>
-                            <constraint firstItem="W8S-ml-VAc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="syY-1q-SYK"/>
-                            <constraint firstItem="hpc-f7-iV8" firstAttribute="top" secondItem="W8S-ml-VAc" secondAttribute="bottom" constant="100" id="wiw-BW-UHz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W8S-ml-VAc" secondAttribute="trailing" constant="53" id="yFZ-OC-luf"/>
+                            <constraint firstItem="W8S-ml-VAc" firstAttribute="centerX" secondItem="hpc-f7-iV8" secondAttribute="centerX" id="2zV-cq-bIe"/>
+                            <constraint firstItem="hpc-f7-iV8" firstAttribute="leading" secondItem="YfN-8h-cuZ" secondAttribute="leading" id="9M1-9L-dZ4"/>
+                            <constraint firstItem="hpc-f7-iV8" firstAttribute="trailing" secondItem="YfN-8h-cuZ" secondAttribute="trailing" id="NKP-RL-Nj5"/>
+                            <constraint firstItem="YfN-8h-cuZ" firstAttribute="top" secondItem="hpc-f7-iV8" secondAttribute="bottom" constant="69" id="SvA-UG-6ad"/>
+                            <constraint firstItem="hpc-f7-iV8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="ahN-pa-xgG"/>
+                            <constraint firstItem="W8S-ml-VAc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bQt-LM-UgV"/>
+                            <constraint firstItem="W8S-ml-VAc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="j0b-TY-7Rh"/>
+                            <constraint firstItem="W8S-ml-VAc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="t80-U2-zNF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YfN-8h-cuZ" secondAttribute="bottom" constant="111" id="u1k-th-11H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
